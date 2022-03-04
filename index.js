@@ -12,6 +12,7 @@ ASSIGNMENT RULES
  Write a function called "area" which receives 2 parameters (l1, l2) and calculates the area of the associated rectangle.
 */
 
+
 function area(l1, l2) {
     return (l1 * l2)
 }
@@ -22,14 +23,28 @@ console.log(result)
 console.log(area(13, 15))
 
 
+
 /* EXERCISE 2
  Write a function called "crazySum" which receives two integers as parameters.
  It should return the sum of those two values, but if the two values are the same then it should return their sum multiplied by 3.
 */
 
-function crazySum(i1, i2) {
 
+function crazySum(i1, i2) {
+    let sum = (i1 + i2)
+    if (i1 === i2) {
+        return sum * 3
+
+    } else {
+        return sum
+    }
 }
+
+let crazySumResults = crazySum(4, 5)
+
+console.log(crazySumResults)
+
+
 
 /* EXERCISE 3
  Write a function called "crazyDiff" that computes the absolute difference between a given number and 19.
